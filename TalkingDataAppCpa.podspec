@@ -1,13 +1,17 @@
 Pod::Spec.new do |s|
   s.platform = :ios, '8.0'
   s.name     = 'TalkingDataAppCpa'
+  s.summary  = 'pod for TalkingDataAppCpa'
   s.version  = '1.0.0'
-  s.summary  = 'TalkingDataAppCpa'
-  s.source   = { :git => 'https://github.com/y500/TalkingDataAppCpa.git', :tag => s.version.to_s }
-  s.authors  = { 'ratazzi' => 'ratazzi@yunyuegame.com' }
-  s.homepage     = "http://www.talkinggame.com"
+  
+  s.homepage         = 'https://y500.me'
+  s.license          = { :type => 'None', :file => 'LICENSE' }
+  s.author           = { 'y500' => 'yanqizhou@126.com' }
+  s.source           = { :git => 'https://github.com/y500/TalkingDataAppCpa.git', :tag => s.version.to_s }
+
   s.license = { :type => 'CC', :text => 'Copyright http://www.talkinggame.com'}
-  s.public_header_files = '*.h'
+
+  s.source_files = '*.h'
   s.framework = 'Security', 'SystemConfiguration', 'CoreGraphics'
   s.weak_framework = 'CoreTelephony', 'AdSupport'
   s.libraries = 'z'
